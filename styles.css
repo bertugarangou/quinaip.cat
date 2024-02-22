@@ -9,8 +9,10 @@ body {
 
 .container {
     text-align: center;
-    top: 45%:
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #ip-address {
@@ -21,4 +23,7 @@ footer {
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
