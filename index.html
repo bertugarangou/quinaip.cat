@@ -1,6 +1,54 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
+    <style>
+
+
+* {
+font-family: "Arial", "Calibri", sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 550px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-height: 50px;
+  
+  bottom: 155%;
+  left: 0;
+}
+
+.dropdown-content a,p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover, p:hover {
+  background-color: #ddd;
+}
+
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+    
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuinaIP.cat</title>
@@ -12,7 +60,13 @@
         <p id="ip-address">Carregant...</p>
     </div>
     <footer>
-        <p>Fet per Carquinyolis. © 2024. Contacte: pendent@carquinyolis.cat</p>
+  <div class="dropdown">
+  <button class="buton">Sobre aquest lloc</button>
+  <div class="dropdown-content">
+    <a href="#">Fet per © Albert "Carquinyolis" Garangou</a>
+    <p>Cansat de veure anuncis quan consultes la teva IP? Aquí mai et molestarem amb anuncis.</p>
+  </div>
+</div>
     </footer>
     <script src="script.js"></script>
 </body>
